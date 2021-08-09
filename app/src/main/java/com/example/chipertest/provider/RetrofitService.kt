@@ -7,8 +7,9 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class RetrofitService {
     private val BASE_URL = BuildConfig.BASE_URL
-    private val retrofit = Retrofit.Builder()
+    val instance = Retrofit.Builder()
         .baseUrl(BASE_URL)
         .addConverterFactory(GsonConverterFactory.create())
+        .client(TMDBClient().getClient())
         .build()
 }

@@ -2,7 +2,7 @@ package com.example.chipertest
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.chipertest.ui.main.MainFragment
+import com.example.chipertest.ui.MainFragment
 
 class MainActivity : AppCompatActivity() {
 
