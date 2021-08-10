@@ -31,7 +31,7 @@ data class ListMovies(
     @SerializedName("public")
     val publicData: Boolean,
     @SerializedName("results")
-    val results: List<Result>,
+    val results: ArrayList<Result>,
     @SerializedName("revenue")
     val revenue: Long,
     @SerializedName("runtime")
