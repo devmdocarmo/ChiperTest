@@ -15,14 +15,16 @@
 
     <TextView
         android:id="@+id/text_movie_title"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:text="@string/example_short"
         android:textSize="@dimen/title"
         android:textStyle="italic|bold"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/image_movie"
-        app:layout_constraintTop_toTopOf="@id/image_movie"/>
+        app:layout_constraintTop_toTopOf="@id/image_movie" />
 
 
     <TextView
@@ -30,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/released_on"
-        android:textSize="20sp"
+        android:textSize="@dimen/secondary"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/text_movie_title"
         app:layout_constraintTop_toBottomOf="@id/text_movie_title"/>
@@ -40,7 +42,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/language"
-        android:textSize="20sp"
+        android:textSize="@dimen/secondary"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/text_movie_release"
         app:layout_constraintTop_toBottomOf="@id/text_movie_release"/>
@@ -50,7 +52,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/average_vote"
-        android:textSize="20sp"
+        android:textSize="@dimen/secondary"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/text_movie_language"
         app:layout_constraintTop_toBottomOf="@id/text_movie_language"/>
